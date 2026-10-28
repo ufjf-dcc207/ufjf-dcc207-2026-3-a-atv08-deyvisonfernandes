@@ -1,0 +1,20 @@
+.pacote{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 2fr 1fr;
+    border: 2px solid rgb(24, 37, 49);
+    width: 500px;
+    padding: 4px;
+    dt{
+        font-weight: bolder;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(27, 43, 61);
+    }
+    dd{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    box-shadow: 6px 3px 10px rgb(39, 38, 38);
+    border-radius: 10px 0px 10px 0px;
+    background-color: white;
+
+}

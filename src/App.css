@@ -1,3 +1,13 @@
+body{
+  background-color: rgb(219, 214, 214);
+}
+.pacotes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
