@@ -13,8 +13,8 @@
     dd{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    box-shadow: 6px 3px 10px rgb(39, 38, 38);
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
     background-color: white;
+    margin: 6px;
 
 }
