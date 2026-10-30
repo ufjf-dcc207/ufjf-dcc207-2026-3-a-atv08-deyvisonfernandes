@@ -23,12 +23,15 @@ const data:Array<PacoteType> =[
 ]
 
 function App() {
+  const [pacotes, setPacotes] = useState(data);
 
   return (
     <section>
     <h2>Pacotes</h2>
-    <div className='pacotes'></div>
-    {data.map(p => <Pacote pacote={p} key={p.id}/>)}
+    <div className='pacotes'>
+      {pacotes.map(p => <Pacote pacote={p} key={p.id}/>)}
+      </div>
+    
     </section>
   )
 }

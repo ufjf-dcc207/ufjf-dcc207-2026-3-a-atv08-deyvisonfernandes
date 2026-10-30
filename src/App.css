@@ -1,6 +1,13 @@
 body{
   background-color: rgb(219, 214, 214);
 }
+
+h2{
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 10px;
+}
+
 .pacotes{
   display: flex;
   flex-wrap: wrap;

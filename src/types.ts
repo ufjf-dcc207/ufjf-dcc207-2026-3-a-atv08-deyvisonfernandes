@@ -1,5 +1,5 @@
 export type PacoteType={
-  id: String;
+  id: string;
   largura: number;
   altura: number;
   profundidade: number;
