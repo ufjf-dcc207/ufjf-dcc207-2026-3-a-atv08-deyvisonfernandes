@@ -15,5 +15,12 @@
     }
     border-radius: 10px 10px 10px 10px;
     background-color: white;
+    button{
+        padding: 4px;
+        font-size: 20px;
+        border-radius: 2px;
+        border: 2px solid rgb(24, 37, 49);
+        margin: 8px;
+    }
 
 }

@@ -24,8 +24,8 @@ const data:Array<PacoteType> =[
 
 function App() {
   const [pacotes, setPacotes] = useState(data);
-  function excluirPacotes (pacote){
-    const novoPacote = pacotes.filter(p => p!==pacote);
+  function excluirPacotes (id){
+    const novoPacote = pacotes.filter(p => p.id !==id);
     setPacotes(novoPacote);
 
   }
@@ -35,10 +35,8 @@ function App() {
     <h2>Pacotes</h2>
     <div className='pacotes'>
       {pacotes.map(p => (
-      <div key={p.id} className='pacotinho'>
-        <button onClick={()=>excluirPacotes(p)}>✖️</button>
-        <Pacote pacote={p}/>
-        </div> )
+        <Pacote pacote={p} acaoExcluir={excluirPacotes} key={p.id}/>
+  )
       )}
       </div>
     
