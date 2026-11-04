@@ -10,9 +10,9 @@ import pacoteReducer from './pacoteReducer'
 const data:Array<PacoteType> =[
   {
     id:"916bbf3e-35e8-46d9-8c9e-fd12329b2342",
-    largura: 20.0,
+    largura: 32.0,
     altura: 30.0,
-    profundidade: 40.0,
+    profundidade: 45.0,
     peso: 2.34
   },
   {
