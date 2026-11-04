@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useReducer, useState } from 'react'
 import './App.css'
 import Pacote from './Pacote'
 import type { PacoteType } from './types'
 import ListaDePacotes from './ListaDePacotes'
+import pacoteReducer from './pacoteReducer'
 
 
 
@@ -24,17 +25,12 @@ const data:Array<PacoteType> =[
 ]
 
 function App() {
-  const [pacotes, setPacotes] = useState(data);
-  function excluirPacotes (id){
-    const novoPacote = pacotes.filter(p => p.id !==id);
-    setPacotes(novoPacote);
-
-  }
+  const [pacotes, dispacher] = useReducer(pacoteReducer,data);
 
   return (
     <section>
     <h2>Pacotes</h2>
-    <ListaDePacotes pacotes={pacotes} acaoExcluir={excluirPacotes} />
+    <ListaDePacotes pacotes={pacotes} dispacher={dispacher} />
     
     </section>
   )
